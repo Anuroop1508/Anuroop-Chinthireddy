@@ -88,42 +88,19 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
-        /* Contact Section */
-        #contact {
+        /* Section Styles */
+        section {
             background: #f4f4f4;
             color: #333;
             padding: 80px 20px;
             text-align: center;
         }
-        #contact h3 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            font-size: 1.2em;
-            line-height: 2;
-        }
-        .contact-info a {
-            color: #2575fc;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Professional Summary Section */
-        #summary {
-            background: #ffffff;
-            color: #333;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        #summary h3 {
+        section h3 {
             font-size: 2.5em;
             margin-bottom: 30px;
         }
-        .summary-card {
-            max-width: 800px;
+        .card {
+            max-width: 900px;
             margin: 0 auto;
             background: linear-gradient(145deg, #e6e6e6, #ffffff);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -131,6 +108,20 @@
             border-radius: 15px;
             font-size: 1.2em;
             line-height: 1.6;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -156,10 +147,20 @@
     </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact">
+    <h3>Contact Me</h3>
+    <div class="card contact-info">
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anuroopchinthireddy" target="_blank">linkedin.com/in/anuroopchinthireddy</a></p>
+        <p><strong>Phone:</strong> +1 (513) 610-8077</p>
+        <p><strong>Email:</strong> <a href="mailto:chinthireddyanuroop@gmail.com">chinthireddyanuroop@gmail.com</a></p>
+    </div>
+</section>
+
 <!-- Professional Summary Section -->
 <section id="summary">
     <h3>Professional Summary</h3>
-    <div class="summary-card">
+    <div class="card">
         Passionate Data Engineer with 3+ years of experience designing, building, and optimizing scalable data pipelines and architectures.
         Skilled in Python, SQL, and cloud platforms like AWS and Azure, I specialize in transforming complex datasets into actionable insights.
         Known for improving system performance, automating workflows, and collaborating across teams to deliver high-impact solutions.
@@ -167,15 +168,60 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h3>Contact Me</h3>
-    <div class="contact-info">
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anuroopchinthireddy" target="_blank">linkedin.com/in/anuroopchinthireddy</a></p>
-        <p><strong>Phone:</strong> +1 (513) 610-8077</p>
-        <p><strong>Email:</strong> <a href="mailto:chinthireddyanuroop@gmail.com">chinthireddyanuroop@gmail.com</a></p>
+<!-- Skills Section -->
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="card">
+        <ul>
+            <li>Programming: Python, SQL, Scala</li>
+            <li>Data Tools: Apache Airflow, dbt, Snowflake, Redshift</li>
+            <li>Cloud Platforms: AWS, Azure, GCP</li>
+            <li>Frameworks: FastAPI, Flask, REST APIs</li>
+            <li>Big Data: Kafka, Spark, Hadoop</li>
+            <li>Version Control: Git, GitHub</li>
+        </ul>
     </div>
 </section>
 
+<!-- Experience Section -->
+<section id="experience">
+    <h3>Experience</h3>
+    <div class="card">
+        <ul>
+            <li><strong>Python Developer | Enshire</strong> (Aug 2021 – June 2023)</li>
+            <li>• Built RESTful APIs, improved service response time by 20%</li>
+            <li>• Led sprint planning and database optimizations (35% faster queries)</li>
+            <br>
+            <li><strong>Jr. Python Developer | MACHIT Group</strong> (Aug 2024 – Mar 2025)</li>
+            <li>• Integrated QuickBooks SDK, automated financial test cases</li>
+            <li>• Developed CLI tools for bulk customer management</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="card">
+        <ul>
+            <li><strong>Real-Time Data Pipeline</strong> — Built Kafka-based pipelines streaming e-commerce data to Snowflake.</li>
+            <li><strong>ETL Automation</strong> — Automated financial reporting using Airflow + dbt, cutting manual time by 50%.</li>
+            <li><strong>FastAPI App</strong> — Developed modular REST APIs for resource management with Swagger integration.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <h3>Certifications</h3>
+    <div class="card">
+        <ul>
+            <li>• AWS Certified Solutions Architect</li>
+            <li>• Microsoft Azure Data Engineer Associate</li>
+            <li>• Google Cloud Professional Data Engineer</li>
+            <li>• dbt Fundamentals Certification</li>
+        </ul>
+    </div>
+</section>
 </body>
 </html>
