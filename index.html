@@ -2,102 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Professional Profile</title>
+    <title>Anuroop Chinthireddy - Data Engineer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background-color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
             color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 50px 20px;
         }
-        header h1 {
+        h1 {
+            font-size: 4em;
             margin: 0;
-            font-size: 3em;
+            animation: fadeInDown 1s ease-out;
         }
-        header p {
-            font-size: 1.2em;
+        h2 {
+            font-size: 2em;
+            font-weight: 300;
+            margin: 10px 0 40px 0;
+            animation: fadeInUp 1s ease-out;
         }
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-        }
-        section h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        .links a {
+        .arrow {
             display: inline-block;
-            margin-right: 10px;
-            color: #0066cc;
+            margin-top: 20px;
+            font-size: 3em;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            transition: transform 0.3s;
+        }
+        .arrow:hover {
+            transform: scale(1.2);
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        a {
+            color: white;
             text-decoration: none;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #666;
         }
     </style>
 </head>
 <body>
 
-<header>
     <h1>Anuroop Chinthireddy</h1>
-    <p>Data Engineer</p>
-</header>
+    <h2>Data Engineer</h2>
 
-<section>
-    <h2>Professional Summary</h2>
-    <p>Results-driven Data Engineer with over 3 years of progressive experience designing and implementing scalable, high-performance data solutions across cloud-native and hybrid environments. Proven expertise in ETL/ELT pipeline development, data modeling, and big data processing, with hands-on experience across a broad technology stack including AWS, GCP, Azure, Snowflake, Apache Spark, Airflow, and Databricks.
-Proficient in scripting and automation using Python, Scala, and SQL, with a strong foundation in both structured and semi-structured data handling (CSV, JSON, Parquet). Adept at building robust data ingestion pipelines leveraging tools such as AWS Lambda, Glue, Redshift, DynamoDB, and Kafka, supporting real-time and batch processing requirements.
-Demonstrated success in optimizing data workflows using Spark transformations, implementing star schema models using Kimball methodology, and enabling advanced analytics through data warehouse solutions in Snowflake and BigQuery. Solid understanding of data governance, encryption, and cloud-based workflow orchestration using Apache Airflow.
-Adept in agile environments, delivering high-impact data solutions in cross-functional teams and aligning closely with business stakeholders to deliver actionable insights through BI tools such as Tableau and Power BI. Committed to engineering excellence, continuous integration/deployment (CI/CD), and driving innovation through automation and scalable architectures.
-</p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python, SQL, Scala</li>
-        <li>Apache Airflow, dbt, Snowflake, Redshift</li>
-        <li>AWS, Azure, GCP</li>
-        <li>FastAPI, Flask, REST APIs</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Real-Time Data Pipeline:</strong> Built a Kafka-based pipeline for streaming e-commerce data into Snowflake.</li>
-        <li><strong>ETL Automation:</strong> Automated financial data extraction and reporting using Airflow + dbt.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Links</h2>
-    <div class="links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
-    </div>
-</section>
-
-<footer>
-    &copy; 2025 Your Name. All rights reserved.
-</footer>
+    <a href="nextpage.html">
+        <div class="arrow">&#8595;</div>
+    </a>
 
 </body>
 </html>
